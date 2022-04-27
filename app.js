@@ -18,6 +18,7 @@ const eventRouter = require('./routes/eventRoutes');
 const memberRouter = require('./routes/memberRoutes');
 const viewRouter = require('./routes/viewRoutes');
 
+// START APP
 const app = express();
 
 // Template Engine

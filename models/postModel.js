@@ -64,18 +64,18 @@ postSchema.pre(/^find/, function(next) {
   next();
 });
 
-postSchema.post(/^find/, function(docs, next) {
-  console.log(`Query took ${Date.now() - this.start} milliseconds!`);
-  next();
-});
+// postSchema.post(/^find/, function(docs, next) {
+//   console.log(`Query took ${Date.now() - this.start} milliseconds!`);
+//   next();
+// });
 
 // AGGREGATION MIDDLEWARE
-postSchema.pre('aggregate', function(next) {
-  this.pipeline().unshift({ $match: { secretPost: { $ne: true } } });
+// postSchema.pre('aggregate', function(next) {
+//   this.pipeline().unshift({ $match: { secretPost: { $ne: true } } });
 
-  console.log(this.pipeline());
-  next();
-});
+//   console.log(this.pipeline());
+//   next();
+// });
 
 const Post = mongoose.model('Post', postSchema);
 

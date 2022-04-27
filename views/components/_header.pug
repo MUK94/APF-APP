@@ -1,0 +1,48 @@
+header.topbar
+    .navbar#myTopnav
+        .topLogo 
+            img.logo(src="/img/favicon_1.png", alt="Logo", srcset="")           
+        i.fa-solid.fa-bars.menuToggle(onclick="toggleMenu()")
+
+        .navigation  
+            .topMenu
+                ul
+                    li
+                        a(href="/" onclick="toggleMenu();") Home 
+                    li 
+                        a(href="/about" onclick="toggleMenu();") About 
+                    li 
+                        a(href="/community" onclick="toggleMenu();" ) Community 
+                    li 
+                        a(href="/blog" onclick="toggleMenu();") Blog
+                    li 
+                        a(href="/contact" onclick="toggleMenu();") Contact 
+            .topUser
+                ul 
+                    if user    
+                        li.dropdown 
+                            .userDetails
+                                .iconUserName 
+                                    i.userIcon.fa.fa-user-circle
+                                    span= user.name.split(' ')[0]
+                                .dropdown-content
+                                    a(href="/dashboard" onclick="toggleMenu();") Dashboard
+                                        i.fa-solid.fa-pen-to-square
+                                    a(href="/settings" onclick="toggleMenu();") Edit Profile
+                                        i.fa.fa-cogs
+                                    a.logOutBtn(href="/" onclick="toggleMenu();") Logout
+                                        i.fa.fa-sign-out 
+                        li.dropMenu
+                            a(href="/dashboard" onclick="toggleMenu();") Dashboard                                
+                            a(href="/settings" onclick="toggleMenu();") Edit Profile
+                            a.logOut(href="/" onclick="toggleMenu();") Logout
+                                    
+                    else    
+                        li.userOut 
+                            a(href="/Login" onclick="toggleMenu()") Login
+                                    i.fa.fa-sign-in
+                            a(href="/signup"   onclick="toggleMenu();") SignUp
+                                    i.fa.fa-user-plus
+                    
+
+    

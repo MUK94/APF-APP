@@ -1,0 +1,15 @@
+each event in events 
+    .event-box
+        .event
+            img.eventPoster(src=`img/events/${event.image}` alt=`${event.title}`)
+            .eventTitle
+                h1= event.title
+                span.eventDate= event.eventDate.toLocaleString('en-us', {year: 'numeric', month: 'long', day: 'numeric'})
+                .authorBox
+                    .authorBio
+                        b= event.speakerName
+                        p= event.speakerBio
+                    
+                .eventSign
+                    a(href= event.link target="_blank") Registration Link
+

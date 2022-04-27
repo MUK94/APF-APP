@@ -1,0 +1,47 @@
+extends base
+
+block content
+    .settings-container
+        .registerMember-Box
+            h1 Update your user infos
+            form(action='')
+                .registerMember-Form
+                    label(htmlfor='username') Username
+                    input#username(type='text' name='username' placeholder='Enter your Username')
+                    
+                    label(htmlfor='email') Email Address
+                    input#email(type='email' name='email' placeholder='Enter your Email')
+
+                    .btn 
+                        button.edit(type='submit') Update
+                        button.del(type='submit') Delete
+
+    //- Member
+    .settings-container
+        .registerMember-Box
+            h1 Update your membership Infos
+            form(action='')
+                .registerMember-Form
+                    label(htmlfor='Profession') Profession
+                    input#profession(type='text' name='Profession' placeholder='Enter your Profession')
+                    
+                    label(htmlfor='tel') Phone 
+                    input#tel(type='tel' name='tel' placeholder='Enter your Phone Number')
+                    
+                    label(htmlfor='location') Location
+                    input#profession(type='text' name='Location' placeholder='Enter your Location')
+                    
+                    label(htmlfor='bio') Add a Short Bio
+                    textarea#bio(name='bio' placeholder='Message')
+                
+                    .memberPhoto
+                        label Upload a Profile Picture
+                        .memberPhotoBox
+                            img.currentProfile(src='https://images.pexels.com/photos/5996845/pexels-photo-5996845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='')
+                            div
+                                label(htmlfor='userProfile')
+                                    i.fa-solid.fa-circle-user
+                                    input#userProfile(type='file' name='userProfile')
+                    .btn 
+                        button.edit(type='submit') Update
+                        button.del(type='submit') Delete

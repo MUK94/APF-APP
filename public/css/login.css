@@ -1,0 +1,125 @@
+.login{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loginBox{
+    position: absolute;
+    top: 5%;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.02rem 0.02rem 0 #888 ;
+}
+.login h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #555;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid #bcbbf3;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+form .loginForm{
+    display: flex;
+    flex-direction: column;
+}
+form .loginForm label {
+    font-size: 1rem;
+    color: #333;
+}
+form .loginForm label, 
+form .loginForm input{
+    margin-bottom: 1rem;
+}
+form .loginForm input {
+    height: 40px;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2px;
+    background-color: rgb(245, 242, 246);
+    border: none;
+}
+form .loginForm input[type=email],
+form .loginForm input[type=password]{
+    font-size: 1rem;
+    font-family: inherit;
+}
+form .loginForm input:focus{
+    outline: none;
+}
+form .loginForm input::placeholder{
+    font-family:inherit;
+    /* color: black; */
+    
+}
+.loginForm button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 0.1rem 0 #666 ;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+}
+.login form .outerLink{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding: 0.15rem 0.35rem;
+    
+}
+.login form .outerLink .innerLink{
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 2px;
+    box-shadow: 0 0.05rem 0.05rem 0 #666 ;
+    padding: 0.05rem 0.1rem;
+    letter-spacing: 1px;
+}
+.login form .outerLink .innerLink a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 460px){
+    .login form {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 360px){
+    .login h1 {
+        font-size: 1.8rem;
+    }
+    .login form {
+        width: 300px;
+    }
+    form .loginForm label {
+        font-size: 0.9rem;
+    }
+    form .loginForm input[type=email], 
+    form .loginForm input[type=password] {
+        font-size: 0.9rem;
+    }
+    .login form .outerLink {
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.1rem 0.15rem;
+    }
+}

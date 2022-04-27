@@ -1,0 +1,22 @@
+.blogContainer h2{
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 1rem;
+    border-bottom: 5px solid #eee;
+}
+.blogBox {
+    display: flex;
+}
+.blogContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 9;
+}
+
+@media screen and (max-width: 960px){
+    .blogBox {
+        flex-wrap: wrap;
+    }
+}
+

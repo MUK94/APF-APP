@@ -1,0 +1,17 @@
+extends base
+
+block content 
+    .login
+        .loginBox
+            h1 Login
+            form.userLogin
+                .loginForm
+                    label(htmlfor='email') Email Address
+                    input#email(type='email' name='email' placeholder='Enter your Email' required)
+                    label(htmlfor='password') Password
+                    input#password(type='password' name='password' minlength="8" placeholder='Enter your Password' required)
+                    button(type='submit') Sign in
+                .outerLink
+                    span Don't have an Account ?
+                    span.innerLink
+                        a(href='/signup') Sign Up

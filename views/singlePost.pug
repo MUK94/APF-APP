@@ -1,0 +1,19 @@
+extends base
+
+block content 
+    .singlePost
+        section.singlePost-container
+            .singlePostWrapper
+                h1.singlePostTitle= post.name
+                span.postDate= `Posted by Admin | ${post.createdAt.toLocaleString('en-us', {year: 'numeric', month: 'long', day: 'numeric'})}`
+                .shareBtns
+                    h2 Share on
+                    i.fab.fa-twitter-square
+                    i.fab.fa-facebook-square
+                img(src=`/img/posts/${post.image}` alt=`${post.name}`)
+                figcaption= post.name
+                .postContent
+                    p= post.body
+
+    
+        include components/_sidebar

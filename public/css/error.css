@@ -1,0 +1,13 @@
+.errorMsg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;   
+}
+.errorMsg h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+    color: red;
+}

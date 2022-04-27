@@ -1,0 +1,24 @@
+extends base
+
+block content 
+    .signUp
+        .signUpBox
+            h1 Register
+            form.registerUser
+                .signUpForm
+                    label(htmlfor='name') Username
+                    input#name(type='text', name='name', placeholder='Enter your username', minlength="4", maxlength="20", required )
+
+                    label(htmlfor='email') Email Address
+                    input#email(type='email' name='email' placeholder='Enter your Email' required)
+
+                    label(htmlfor='password') Password
+                    input#password(type='password', name='password', placeholder='Enter your Password', minlength="8", required )
+
+                    label(htmlfor='passwordConfirm') Confirm Password
+                    input#passwordConfirm(type='password', name='passwordConfirm', placeholder='Confirm your Password', minlength="8", required)
+                    button(type='submit') Register
+                .outerLink
+                    span Have an Account ?
+                    span.innerLink
+                        a(href='/login') Sign In

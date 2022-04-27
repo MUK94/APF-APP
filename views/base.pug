@@ -1,0 +1,49 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="/img/favicon_1.png", type="image/png")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css")
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel="stylesheet", href="/css/topbar.css")
+        link(rel="stylesheet", href="/css/bannerHome.css")
+        link(rel="stylesheet", href="/css/home.css")
+        link(rel="stylesheet", href="/css/events.css")
+        link(rel="stylesheet", href="/css/sidebar.css")
+        link(rel="stylesheet", href="/css/footer.css")
+        link(rel="stylesheet", href="/css/about.css")
+        link(rel="stylesheet", href="/css/community.css")
+        link(rel="stylesheet", href="/css/blog.css")
+        link(rel="stylesheet", href="/css/post.css")
+        link(rel="stylesheet", href="/css/singlePost.css")
+        link(rel="stylesheet", href="/css/contact.css")
+        link(rel="stylesheet", href="/css/login.css")
+        link(rel="stylesheet", href="/css/signup.css")
+        link(rel="stylesheet", href="/css/dashboard.css")
+        link(rel="stylesheet", href="/css/settings.css")
+        link(rel="stylesheet", href="/css/member.css")
+        link(rel="stylesheet", href="/css/error.css")
+        title APF | #{title}
+    body 
+        .bodyContent
+            //- HEADER
+            include components/_header
+            
+            //- CONTENT
+            block content
+                include home
+
+            //- FOOTER
+            include components/_footer
+
+script(src="/js/toggle.js") 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+script(src="/js/index.js") 
+script(src="/js/signup.js") 
+script(src="/js/logout.js") 
+
+
+
+              

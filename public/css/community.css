@@ -1,0 +1,151 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 1rem;
+}
+.head h1{
+    color: #555;
+    margin-bottom: 2rem;
+}
+.head button{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 5px;
+    box-shadow: 0 0.05rem 0.03rem 0 #666 ;
+    cursor: pointer;
+}
+.head button a{
+    text-decoration:none;
+    color: inherit;
+}
+
+.community{
+    flex-wrap: wrap;
+    display: flex;
+    margin-left:1rem;
+    margin-top: 2rem;
+}
+.community-box{
+    width: 210px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0.05rem 0.05rem 0 #777;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+.community-box .imgBox{
+    height: 120px;
+    width: 120px;
+}
+.community-box .imgBox img{
+    height: 120px;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.community .user-bio{
+    color: #777;
+    text-align: center;
+    font-size: small;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.community .memberDetails{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 0.25rem 1.15rem;
+    background-color: rgb(234, 229, 252);
+}
+.community .memberDetails .username{
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.community .memberDetails i{
+    font-size: 1.2rem;
+    background-color: unset;
+    border: none;
+}
+.community .memberDetails .box{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.community .memberDetails .box i{
+    color: #af6ddc;
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+.community .memberDetails a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.15rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 5px;
+    box-shadow: 0 0.03rem 0.02rem 0 #666;
+}
+
+@media screen and (max-width: 550px){
+    .head h1 {
+        display: none;
+    }
+    .head button {
+        position: absolute;
+        height: 25px;
+        font-size: 1rem;
+        padding: 0.15rem;
+        letter-spacing: 1px;
+        border-radius: 2px;
+        right: 1.5%;
+        top: 12%;
+    }
+}
+@media screen and (max-width: 350px){
+    .community-box{
+        width: 180px;
+    }
+    .community-box img {
+        width: 100%;
+        height: 180px;
+        padding: 1rem;
+    }
+    .community .memberDetails {
+        padding: 0.15rem 0.75rem;
+    }
+    .community .memberDetails .username {
+        text-align: center;
+        margin: 0.3rem 0;
+        font-size: 1rem;
+    }
+    .community .memberDetails .box i {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+}

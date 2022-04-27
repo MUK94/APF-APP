@@ -1,0 +1,124 @@
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 5rem;
+    background: url('https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+}
+.contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #555;
+    padding: 1rem;
+    border-bottom: 5px solid #bcbbf3;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+form .contactForm{
+    display: flex;
+    flex-direction: column;
+}
+form .contactForm label {
+    font-size: 1rem;
+    color: #333;
+}
+form .contactForm label, 
+form .contactForm input{
+    margin-bottom: 1rem;
+}
+form .contactForm input {
+    height: 40px;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    background-color: rgb(245, 242, 246);
+    border: none;
+    border-bottom: 1px solid #555;
+}
+form .contactForm input[type=email],
+form .contactForm input[type=text]{
+    font-size: 1rem;
+    font-family: inherit;
+}
+form .contactForm input:focus{
+    outline: none;
+}
+form .contactForm input::placeholder{
+    font-family:inherit;
+
+    
+}
+form .contactForm textarea{
+    height: 120px;
+    font-family: inherit;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    background-color: rgb(245, 242, 246);
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #555;
+    margin-bottom: 1rem;
+}
+form .contactForm textarea:focus{
+    outline: none;
+}
+.contactForm button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 0.1rem 0 #666 ;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 660px){
+    .contact form {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 440px){
+    .contact h1 {
+        font-size: 2rem;
+        margin: 0 0 2rem;
+    }
+    .contact form {
+        width: 300px;
+    }
+    form .contactForm label {
+        font-size: 0.9rem;
+    }
+    form .contactForm input[type=email], 
+    form .contactForm input[type=text] {
+        font-size: 0.9rem;
+    }
+    form .contactForm textarea {
+        font-size: 0.9rem;
+    }
+    .login form .outerLink .innerLink a {
+        font-size: 1rem;
+    }
+}

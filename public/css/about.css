@@ -1,0 +1,130 @@
+header .cover{
+    text-align: center;
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.pexels.com/photos/8442276/pexels-photo-8442276.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8442276.jpg&fm=jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+    margin-bottom: 2rem;
+}
+header .slogan{
+   background-color: #666 ;
+   background-color: rgba(0,0,0, 0.5);
+   position: absolute;
+   padding: 1rem;
+   border-radius: 0.5rem;
+   box-shadow: 0.1rem 0.15rem 0.15rem 0.1rem #333;
+   letter-spacing: 2px;
+   font-weight: bold;
+   cursor: pointer;
+   color: whitesmoke;
+}
+header .slogan h2{
+   font-size: 2.5rem;
+}
+
+.about-container{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container .imgBox{
+    width: 500px;
+}
+.about-container .imgBox img{
+   margin-right: 2rem;
+   width: 90%;
+   object-fit: cover;
+   height: 340px;
+   border-radius: 35% 15%;
+}
+.about-container section{
+   flex: 6;
+}
+.about-container section .about{
+   color: black;
+   padding-right: 2rem;
+   border-bottom: 3px solid #bcbbf3;
+   border-right: 3px solid #bcbbf3;
+   border-radius: 10px;
+}
+.about-container section p{
+   line-height: 2rem;
+   padding:0 0.75rem;
+   font-size: 1.2rem;
+   padding-bottom: 2rem;
+}
+.about-container section p::first-letter{
+   font-size:2rem;
+   color: #bcbbf3;
+   font-weight: bold;
+}
+
+.about-container section a{
+   text-decoration: none;
+   color: black;
+   
+}
+
+@media screen and (max-width: 960px){
+    header .slogan {
+        padding: 0.25rem;
+    }
+    header .slogan h2 {
+        font-size: 1.8rem;
+    }
+    .about-container section .about {
+        padding-right: 0.25rem;
+        border-bottom: none;
+        border-right: none;
+        padding-bottom: 1rem;
+    }
+    .about-container .imgBox img {
+        padding:0 1rem;
+        width: 100%;
+        height: 270px;
+    }
+    .about-container section p {
+        line-height: 1.7rem;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+ }
+
+ @media screen and (max-width: 660px){
+    .about-container {
+       flex-direction: column;
+    }
+    .about-container .imgBox{
+        padding-bottom: 2rem;
+    }
+    .about-container .imgBox img{
+        padding-bottom: 2rem;
+    }
+    .about-container section p {
+        padding: 0 1rem;
+    }
+ }
+
+ @media screen and (max-width: 520px){
+    header .slogan {
+        padding: 0.25rem;
+        letter-spacing: 1px;
+    }
+    header .slogan h2 {
+        font-size: 1.3rem;
+    }
+    .about-container .imgBox {
+        width: unset;
+    }
+    .about-container .imgBox img{
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+ }

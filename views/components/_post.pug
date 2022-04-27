@@ -1,0 +1,14 @@
+each post in posts
+    .post-box
+        a(href=`/blog/${post.slug}`)
+            .post
+                img(src=`/img/posts/${post.image}` alt=`${post.name}`)
+                figcaption= post.name
+                .postInfo
+                    .postTitle
+                        h3= post.name
+                    span.postDate= post.createdAt.toLocaleString('en-us', {year: 'numeric', month: 'long', day: 'numeric'})
+        .postDesc
+            p= post.body
+
+

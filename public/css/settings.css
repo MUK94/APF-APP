@@ -1,0 +1,197 @@
+.settings-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-bottom: 5rem;
+}
+.registerMember-Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registerMember-Box h1{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    font-weight: 500;
+    color: #555;
+    padding-bottom: 1rem;
+}
+.registerMember-Box form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin-bottom: 2rem;
+}
+form .registerMember-Form{
+    display: flex;
+    flex-direction: column;
+}
+form .registerMember-Form label {
+    font-size: 1rem;
+}
+/* PHOTO */
+form .registerMember-Form .memberPhoto{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+form .registerMember-Form .memberPhotoBox{
+    display: flex;
+    align-items: center;
+}
+form .memberPhoto img{
+    width: 130px;
+    height: 130px;
+    border-radius: 0.5rem ;
+    margin: 1rem 0;
+    object-fit: cover;
+}
+form .registerMember-Form .memberPhotoBox input{
+    display: none;
+}
+form .registerMember-Form .memberPhotoBox i{
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    background-color: rgb(245, 242, 246);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+form .registerMember-Form label, 
+form .registerMember-Form input{
+    margin-bottom: 1rem;
+    color: #333;
+}
+form .registerMember-Form input {
+    height: 40px;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    background-color: rgb(245, 242, 246);
+    border: none;
+    border-bottom: 1px solid #555;
+    font-size: 1rem;
+}
+form .registerMember-Form input[type=email],
+form .registerMember-Form input[type=text],
+form .registerMember-Form input[type=tel]{
+    font-size: 1rem;
+    font-family: inherit;
+}
+form .registerMember-Form input:focus{
+    outline: none;
+}
+form .registerMember-Form input::placeholder{
+    font-family:inherit;
+    /* color: black; */
+    
+}
+form .registerMember-Form textarea{
+    height: 120px;
+    font-family: inherit;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    background-color: rgb(245, 242, 246);
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #555;
+}
+form .registerMember-Form textarea:focus{
+    outline: none;
+}
+.settings-container .registerMember-Form .btn{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.registerMember-Form .btn .edit{
+    background-color: green;
+    color: #eee;
+}
+.registerMember-Form .btn .del{
+    background-color: red;
+    color: #eee;
+}
+.registerMember-Form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0.15rem 0.15rem 0 #666;
+    cursor: pointer;
+}
+.settings-container form .outerLink{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.15rem 0.35rem;
+    
+}
+.settings-container form .outerLink .innerLink{
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 5px;
+    box-shadow: 0 0.25rem 1rem 0 #666 ;
+    padding: 0.1rem 0.2rem;
+}
+.settings-container form .outerLink .innerLink a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 670px){
+    .settings-container .registerMember-Box h1 {
+        font-size: 1.8rem;
+    }
+    .settings-container .registerMember-Box form {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 510px){
+    .settings-container .registerMember-Box h1 {
+        font-size: 1.6rem;
+    }
+    .settings-container .registerMember-Box form {
+        width: 380px;
+    }
+    .settings-container form .registerMember-Form label{
+        font-size: 0.9rem;
+    }
+    .settings-container form .registerMember-Form input::placeholder {
+        font-size: 0.9rem;
+    }
+    .settings-container .registerMember-Form button {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 380px){
+    .settings-container .registerMember-Box h1 {
+        font-size: 1.4rem;
+    }
+    .settings-container .registerMember-Box form {
+        width: 300px;
+    }
+    .settings-container form .registerMember-Form input::placeholder {
+        font-size: 0.8rem;
+    }
+    .settings-container .registerMember-Form button {
+        font-size: 0.9rem;
+    }
+}

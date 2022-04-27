@@ -1,0 +1,27 @@
+extends base
+
+block content 
+    section.head
+        h1 Start Networking Now !👋
+        button
+            a(href='/member') Become Member
+            i.fa.fa-user-plus
+    .community
+        each member in members
+            .community-box
+                .imgBox
+                    img(src=`/img/members/${member.profileImage}` alt=`${member.name}`)
+  
+                .memberDetails
+                    p.username= member.memberName[0].name
+                    .box
+                        i.fa.fa-briefcase
+                        p= member.profession
+                    .box
+                        i.fa.fa-phone
+                        p= member.phone
+                    .box
+                        i.fa.fa-location       
+                        p= member.location
+                    span.user-bio= member.bio
+                    a(href=`mailto:${member.memberName[0].email}`) Email me

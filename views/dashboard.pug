@@ -1,0 +1,85 @@
+extends base
+
+block content 
+    h2.dashTitle Welcome to Admin Panel 📝
+    .dashContent 
+        .postBox 
+            .createContainer
+                .createBox
+                    h3.title Create a Post
+                    form(action='' method='post')
+
+                        label(htmlfor='title') Title
+                        input#title(type='text' name='title' placeholder='Title')
+                    
+                        label(htmlfor='message') Message
+                        textarea#message(name='body' placeholder='Tell your story...')
+
+                        .createBtn
+                            input#file(type='file' name='file')
+                            button(type='submit') Publish
+
+            .listOfPosts
+                h3.title List of Blogs 
+                .postTable 
+                    table 
+                        tr  
+                            td.titlePost Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laborum velit eius 
+                            td.edit Update 
+                            td.del Delete
+
+        .eventBox  
+            .createContainer
+                .createBox
+                    h3.title Create an Event
+                    form(action='' method='post')
+
+                        label(htmlfor='title') Title
+                        input#title(type='text' name='title' placeholder='Title')
+
+                        label(htmlfor='date') Event Date
+                        input#date(type='datetime-local' name='eventDate' placeholder='Event Date')
+
+                        label(htmlfor='speaker') Speaker Name
+                        input#title(type='text' name='speakerName' placeholder='Speaker Name')
+
+                        label(htmlfor='bio') Speaker Bio
+                        input#title(type='text' name='speakerBio' placeholder='Short Bio')
+
+                        label(htmlfor='link') Registration Link
+                        textarea#link(name='link' placeholder='Registration Link')
+
+                        .createBtn
+                            input#file(type='file' name='file')
+                            button(type='submit') Publish
+            
+            .listOfEvents
+                h3.title List of Events
+                .postTable 
+                    table 
+                        tr  
+                            td.titlePost Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laborum velit eius 
+                            td.edit Update 
+                            td.del Delete
+        
+    .dashContentUser 
+        .listOfUsers
+            h3.title List of Users 
+            .postTable 
+                table  
+                    td John David 
+                    td.del Delete
+                table  
+                    td Michelle
+                    td.del Delete
+
+        .listOfMembers
+            h3.title List of Members 
+            .postTable 
+                table 
+                    td.titlePost Mouctar Balde
+                    td.del Delete
+                table 
+                    td.titlePost Kamano Maurice 
+                    td.del Delete
+

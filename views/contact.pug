@@ -1,0 +1,19 @@
+extends base
+
+block content 
+    section.contact-box
+        .contact
+            .contactBox
+            h1 Get in Touch
+            form(action='')
+                .contactForm
+                    label(htmlfor='email') Email Address
+                    input#email(type='email' name='email' placeholder='Enter your Email')
+
+                    label(htmlfor='subject') Subject
+                    input#subject(type='text' name='subject' placeholder='Enter your subject')
+
+                    label(htmlfor='message') Message
+                    textarea#message(name='message' placeholder='Message')
+
+                    button(type='submit') Send

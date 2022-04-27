@@ -1,0 +1,126 @@
+.signUp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    object-fit: cover;
+
+}
+.signUpBox{
+    position: absolute;
+    top: 5%;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.02rem 0.02rem 0 #888 ;
+}
+.signUp h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #555;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid #bcbbf3;
+}
+
+.signUp form {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+form .signUpForm{
+    display: flex;
+    flex-direction: column;
+}
+form .signUpForm label {
+    font-size: 1rem;
+    color: #333;
+}
+form .signUpForm label, 
+form .signUpForm input{
+    margin-bottom: 1rem;
+}
+form .signUpForm input {
+    height: 40px;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2px;
+    background-color: rgb(245, 242, 246);
+    border: none;
+}
+form .signUpForm input[type=text],
+form .signUpForm input[type=email],
+form .signUpForm input[type=password]{
+    font-size: 1rem;
+    font-family: inherit;
+}
+form .signUpForm input:focus{
+    outline: none;
+}
+form .signUpForm input::placeholder{
+    font-family:inherit;
+}
+.signUpForm button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 0.1rem 0 #666 ;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+}
+.signUp form .outerLink{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.15rem 0.35rem;
+    
+}
+.signUp form .outerLink .innerLink{
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 2px;
+    box-shadow: 0 0.05rem 0.05rem 0 #666 ;
+    padding: 0.05rem 0.1rem;
+    letter-spacing: 1px;
+}
+.signUp form .outerLink .innerLink a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 460px){
+    .signUp form {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 360px){
+    .signUp h1 {
+        font-size: 1.8rem;
+    }
+    .signUp form {
+        width: 300px;
+    }
+    form .signUpForm label {
+        font-size: 0.9rem;
+    }
+    form .signUpForm input[type=email], 
+    form .signUpForm input[type=password] {
+        font-size: 0.9rem;
+    }
+    .signUp form .outerLink {
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.1rem 0.15rem;
+    }
+}

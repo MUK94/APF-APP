@@ -1,0 +1,48 @@
+footer
+    .footer-container
+        .footer-content
+            .newsLetter
+                .eventDesc
+                    form(action='' method='post')
+                        .form-content
+                            //- .box
+                            //-     label(htmlfor='username') Username
+                            //-     input#username(type='text' name='username' placeholder='Mr/Ms.....')
+                            .box
+                                label(htmlfor='email') Email
+                                input#email(type='email' name='email' placeholder='user@apf.com')
+                        button(type='submit') Subscribe to event Series
+            section
+                h3  Quick links
+                    .social-links
+                        a(href='https://twitter.com')
+                            i.sidebarMedia.fab.fa-twitter-square
+                        a(href='https://linkedin.com')
+                            i.sidebarMedia.fab.fa-linkedin
+                        a(href='https://facebook.com')
+                            i.sidebarMedia.fab.fa-facebook
+                        a(href='https://youtube.com')
+                            i.sidebarMedia.fab.fa-youtube
+                    .footer-menu
+                        ul
+                            li
+                                a(href='/') Home
+                            span |
+                            li
+                                a(href='/#about') About
+                            span |
+                            li
+                                a(href='/community') Community
+                            span |
+                            li
+                                a(href='/blog') Blog
+                            span |
+                            li
+                                a(href='/contact') Contact
+        #topBtn.topBtn
+            button
+                i.fa.fa-chevron-up
+    .footer-bottom
+        p African Phage Forum for African Phage Researchers
+        small APF © 2022 | All rights reserved | Powered by
+            a(href='https://twitter.com/MuktarBalde')  Mouctechy

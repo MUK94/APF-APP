@@ -1,0 +1,13 @@
+.events .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;  
+}
+.events .events-container{
+    display: flex;
+}
+.events-all{
+    display: flex;
+    flex-direction: column;
+    flex: 9;
+}

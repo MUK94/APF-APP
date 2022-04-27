@@ -1,0 +1,202 @@
+.dashContent, 
+.dashContentUser{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashContent{
+    border-bottom: 3px solid #eee;
+    margin-bottom: 2rem;
+}
+.postBox, .eventBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7rem;
+}
+.dashTitle {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 1rem;
+    
+}
+.createContainer{
+    margin-top: 1rem;
+    display: flex;
+    padding-bottom: 7rem;
+}
+.createBox .title{
+    text-align: center;
+    padding: 0.15rem 4rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: #bcbbf3;
+}
+.createContainer form{
+    display: flex;
+    flex-direction: column;
+    /* height: 400px; */
+    width: 550px;
+}
+.createContainer form label{
+    font-size: 1rem;
+    margin: 0.75rem 0;
+    color: #333;
+}
+.createContainer form input, 
+.createContainer form textarea{
+    background-color: rgb(245, 242, 246);
+}
+.createContainer form input[type=text],
+.createContainer form input[type=datetime-local]{
+    height: 40px;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    color: black;
+    border-bottom: 1px solid #555;
+    border-radius: 5px;
+}
+
+.createContainer form textarea {
+    height: 300px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: inherit;
+}
+.createContainer form #link{
+    height: 50px;
+}
+.createContainer form input:focus, 
+.createContainer form textarea:focus{
+    outline: none;
+}
+.createContainer .createBtn{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.createContainer form input[type=file]{
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+    background-color: unset;
+    font-family: inherit;
+}
+.createContainer form button {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.15rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: #bcbbf3;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 0.1rem 0 #666 ;
+    cursor: pointer;
+}
+.createContainer form button:hover{
+    transform: scale(1.1);
+}
+
+.listOfPosts, 
+.listOfUsers,
+.listOfEvents,
+.listOfMembers{
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+.listOfPosts .title,
+.listOfMembers .title,
+.listOfEvents .title,
+.listOfUsers .title{
+    text-align: center;
+    padding: 0.15rem 4rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: #bcbbf3;
+}
+table{
+    width: 550px;
+    border: 1px solid #eee;
+    font-size: 1.1rem;
+}
+table tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table td{
+    padding: 0.75rem;
+}
+table .edit{
+    color: green;
+    cursor: pointer;
+}
+table .del{
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .createContainer form {
+        height: 300px;
+        width: 400px;
+        margin-left: 0.5rem;
+    }
+    table {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .dashContent, 
+    .dashContentUser{
+    flex-wrap: wrap;
+    }
+    .dashTitle {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    .createContainer form, table {
+        width: 400px;
+    }
+    .createContainer form input[type=file] {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+    .createContainer form button {
+        font-size: 1rem;
+        padding: 0.1rem;
+    }    
+
+    .listOfPosts .title, 
+    .listOfEvents .title, 
+    .listOfMembers .title,  
+    .listOfUsers .title {
+        padding: 0.15rem;
+        margin: 1.5rem 0;
+        font-size: 1.3rem;
+    }
+    table td {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .createContainer form, table {
+        width: 300px;
+        font-size: 1rem;
+    }
+}

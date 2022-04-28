@@ -17,8 +17,8 @@ router.get(
 
 // router.post('/signup-user', viewController.signUpUser);
 
-router.use(authController.isLoggedIn);
 router.get('/', viewController.getEvents);
+router.use(authController.isLoggedIn);
 router.get('/about', viewController.getAbout);
 router.get('/blog', viewController.getBlogs);
 router.get('/contact', viewController.getContact);
